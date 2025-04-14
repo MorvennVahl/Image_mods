@@ -7,10 +7,8 @@ import math
 arr = np.array([1, 5, 10, 15, 20])
 lower, upper = 5, 15
 
-# Anzahl der geclippten Werte
 clipped_count = np.sum((arr < lower) | (arr > upper))
 
-# Anwenden von np.clip
 clipped_arr = np.clip(arr, lower, upper)
 
 print(clipped_count)
